@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        body{
+            min-height: 100vh;
+            min-width: 100vw; 
+            overflow: hidden;
+        }
+        canvas{
+            margin-top: 4vh;
+            width: 600px;
+            height: 600px;
+            background-color: black;
+        }
+        #score{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 18vw;
+            height: 50px;
+            border: 1px solid black;
+            font-size: 30px;
+            margin-top: 1vh;
+            margin-left: 40vw;
+            background-color: black;
+            color: rgb(64, 247, 247);
+        }
+        #board{
+            justify-content: center;
+        }
+    </style>
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" id='score'></div>
+        <div class="row" id='board'><canvas></canvas></div>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>
